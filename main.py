@@ -14,7 +14,7 @@ import gettext
     localedir => is the directory location of the locale folder you created
     languages => is a hint for the searching mechanism to load particular language code more resiliently
 '''
-el = gettext.translation('base', localedir='locale', languages=['pt'])
+el = gettext.translation('base', localedir='locale', languages=['es'])
 el.install()
 _ = el.gettext
 
@@ -23,7 +23,7 @@ def say_hello():
         This is a short function when you write your name
         yo can show a funny greeting :D
     '''
-    name =  input(_('¿What is your name?'))
+    name =  input(_('What is your name?'))
     print(_('Hello, {}. :D').format(name))
 
 if __name__=='__main__':
